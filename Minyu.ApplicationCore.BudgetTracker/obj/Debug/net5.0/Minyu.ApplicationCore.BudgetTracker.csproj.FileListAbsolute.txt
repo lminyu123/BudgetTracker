@@ -1,0 +1,12 @@
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.deps.json
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.dll
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\ref\Minyu.ApplicationCore.BudgetTracker.dll
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.pdb
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.csproj.AssemblyReference.cache
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.AssemblyInfoInputs.cache
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.AssemblyInfo.cs
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.csproj.CoreCompileInputs.cache
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.dll
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\ref\Minyu.ApplicationCore.BudgetTracker.dll
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.pdb
