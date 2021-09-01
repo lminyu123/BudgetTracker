@@ -17,7 +17,7 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
         {
             _expenditureRepository = expenditureRepository;
         }
-        public async Task<ExpenditureResponseModel> AddIncome(ExpenditureResponseModel model)
+        public async Task<ExpenditureResponseModel> AddExpenditure(ExpenditureRequestModel model)
         {
             var expenditure = new Expenditure
             {
@@ -39,7 +39,7 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
             return expendituremodel;
         }
 
-        public async Task DeleteIncome(int expenditureid)
+        public async Task DeleteExpenditure(int expenditureid)
         {
             var expenditure = await _expenditureRepository.ListAsync(i => i.Id == expenditureid);
             await _expenditureRepository.DeleteAsync(expenditure.First());
@@ -47,7 +47,7 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
 
         public async Task<IEnumerable<ExpenditureResponseModel>> GetAllExpenditure()
         {
-            var expenditures = await _expenditureRepository.ListAsync();
+            var expenditures = await _expenditureRepository.ListAllAsync();
             List<ExpenditureResponseModel> model = new List<ExpenditureResponseModel>();
             foreach (var expenditure in expenditures)
             {
@@ -100,6 +100,7 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
             var updateExpense = await _expenditureRepository.UpdateAsync(expense);
             var expendituremodel = new ExpenditureResponseModel
             {
+                Id = updateExpense.Id,
                 UserId = updateExpense.UserId,
                 Amount = updateExpense.Amount,
                 Description = updateExpense.Description,

@@ -9,9 +9,9 @@ namespace Minyu.ApplicationCore.BudgetTracker.ServiceInterface
 {
     public interface IExpenditureService
     {
-        Task<ExpenditureResponseModel> AddIncome(ExpenditureResponseModel expenditureRequestModel);
+        Task<ExpenditureResponseModel> AddExpenditure(ExpenditureRequestModel expenditureRequestModel);
         Task<ExpenditureResponseModel> UpdateExpenditure(ExpenditureRequestModel expenditureResponseModel);
-        Task DeleteIncome(int expenditureid);
+        Task DeleteExpenditure(int expenditureid);
         Task<IEnumerable<ExpenditureResponseModel>> GetAllExpenditure();
         Task<IEnumerable<ExpenditureResponseModel>> ListExpenditureById(int userId);
     }

@@ -19,7 +19,9 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
         }
         public async Task<UserResponseModel> AddUser(AddUserRequestModel model)
         {
-            var dbUser = _userRepository.GetByIdAsync(model.Id);
+            Console.WriteLine("***Debug user service: get into the AddUser()");
+            var dbUser = _userRepository.GetUserByEmail(model.Email);
+            //Console.WriteLine($"*** Check dbUser + {dbUser.Id} + email: {dbUser.}");
             if (dbUser != null)
             {
                 throw new Exception("The User already exists");
@@ -33,8 +35,9 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
                 FullName = model.Fullname,
                 JoinedOn = DateTime.Now
             };
-
+            Console.WriteLine("***Debug User services: Before AddAsync()");
             var createdUser = await _userRepository.AddAsync(user);
+            Console.WriteLine("***Debug User services: after AddAsync()");
             var userResponseModel = new UserResponseModel
             {
                 Id = createdUser.Id,
@@ -75,6 +78,8 @@ namespace Minyu.Infrastructure.BudgetTracker.Services
         public async Task<UserDetailResponseModel> GetUserDetail(int userId)
         {
             var user = await _userRepository.GetByIdAsync(userId);
+
+            //TODO: Have to validate the user object
 
             var responseModel = new UserDetailResponseModel
             {

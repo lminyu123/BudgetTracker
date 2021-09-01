@@ -66,9 +66,15 @@ namespace Minyu.BudgetTracker.API
 
             app.UseHttpsRedirection();
 
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins(Configuration.GetValue<string>(key: "clientSPAUrl")).AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {
