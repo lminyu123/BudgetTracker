@@ -9,10 +9,15 @@ namespace Minyu.ApplicationCore.BudgetTracker.Entities
    public class Expenditure
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
+        
+        //foregin key
+        public int? UserId { get; set; }
         public decimal Amount { get; set; }
         public string Description { get; set; }
         public string Remarks { get; set; }
         public DateTime? ExpDate { get; set; }
+        
+        //navgation property
+        public User User { get; set; }
     }
 }

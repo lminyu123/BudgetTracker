@@ -10,3 +10,6 @@ C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\ob
 C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.dll
 C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\ref\Minyu.ApplicationCore.BudgetTracker.dll
 C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.pdb
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.runtimeconfig.json
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\bin\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.runtimeconfig.dev.json
+C:\Users\liang\source\repos\BudgetTracker\Minyu.ApplicationCore.BudgetTracker\obj\Debug\net5.0\Minyu.ApplicationCore.BudgetTracker.genruntimeconfig.cache
