@@ -11,5 +11,6 @@ namespace Minyu.BudgetTracker.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+
     }
 }

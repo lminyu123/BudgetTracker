@@ -9,14 +9,15 @@ namespace Minyu.ApplicationCore.BudgetTracker.ServiceInterface
 {
    public interface IUserService
     {
-        //Task<IEnumerable<UserResponseModel>> GetAllUsers();
-        Task<UserDetailResponseModel> GetUserDetail(int id);
-        Task<List<UserDetailResponseModel>> GetAllUsers();
+        Task<IEnumerable<UserResponseModel>> GetAllUsers();
+        Task<UserDetailResponseModel> GetUserDetail(int userId);
+        //Task<List<UserDetailResponseModel>> GetAllUsers();
 
-        //Task<List<MovieCardResponseModel>> GetTopRevenueMovies();
+        Task<UserResponseModel> AddUser(AddUserRequestModel addUserRequestModel);
+        Task DeleteUser(int userId);
+
+        Task<UserResponseModel> UpdateUser(AddUserRequestModel addUserRequestModel);
+
         
-        //Task<List<MovieCardResponseModel>> GetTopRatedMovies();
-        
-        //Task<IEnumerable<MovieReviewResponseModel>> GetMovieReviews(int id);
     }
 }

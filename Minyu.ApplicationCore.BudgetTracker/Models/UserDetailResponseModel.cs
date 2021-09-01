@@ -12,9 +12,12 @@ namespace Minyu.ApplicationCore.BudgetTracker.Models
         public string Email { get; set; }
         public string FullName { get; set; }
 
-       // public int 
+        //public int TotalExpenditure { get; set; }
+        //public int TotalIncome { get; set; }
         public List<IncomeResponseModel> Incomes { get; set; }
         public List<ExpenditureResponseModel> Expenditures { get; set; }
+
+
 
     }
 }

@@ -17,10 +17,10 @@ namespace Minyu.Infrastructure.BudgetTracker.Repositories
 
         }
        
-        public async Task<User> GetByIdAsync(int id)
+        public override async Task<User> GetByIdAsync(int id)
         {
             //selecr all id from users
-            var users =await  _dbContext.Users.Include(u => u.Incomes).Include(u => u.Expenditures).FirstOrDefaultAsync(u => u.Id == id);
+            var users = await  _dbContext.Users.Include(u => u.Incomes).Include(u => u.Expenditures).FirstOrDefaultAsync(u => u.Id == id);
             return users;
         }
 

@@ -8,7 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Minyu.ApplicationCore.BudgetTracker.RepositoryInterface;
+using Minyu.ApplicationCore.BudgetTracker.ServiceInterface;
 using Minyu.Infrastructure.BudgetTracker.Data;
+using Minyu.Infrastructure.BudgetTracker.Repositories;
+using Minyu.Infrastructure.BudgetTracker.Services;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -31,6 +35,12 @@ namespace Minyu.BudgetTracker.API
         {
 
             services.AddControllers();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IIncomeRepository, IncomeRepository>();
+            services.AddScoped<IExpenditureRepository, ExpenditureRepository>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IIncomeService, IncomeService>();
+            services.AddScoped<IExpenditureService, ExpenditureService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minyu.BudgetTracker.API", Version = "v1" });
@@ -40,6 +50,7 @@ namespace Minyu.BudgetTracker.API
                 (
                     options => options.UseSqlServer(Configuration.GetConnectionString("BudgetTrackerDbconnection"))
                 );
+            
         }
         
 

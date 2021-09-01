@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Minyu.ApplicationCore.BudgetTracker.Models
 {
-    class ExpenditureRequestModel
+    public class ExpenditureRequestModel
     {
         public int Id { get; set; }
         public int UserId { get; set; }
